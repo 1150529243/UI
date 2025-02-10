@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@ludashuai-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,5 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@ludashuai-ui/components": "workspace:*",
+    "markdown-it": "^14.1.0",
+    "markdown-it-container": "^4.0.0"
   }
 }

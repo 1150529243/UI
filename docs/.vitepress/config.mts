@@ -1,14 +1,14 @@
 import { defineConfig } from "vitepress";
-
+import { aiascom } from "../plugin/aiascom"; //引入插件
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "ludashuai-UI",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "主页", link: "/" },
+      { text: "指南", link: "/markdown-examples" },
     ],
 
     sidebar: [
@@ -23,8 +23,8 @@ export default defineConfig({
           {
             text: "Basic基础组件",
             items: [
-              { text: "Button 按钮", link: "examples/Button" },
-              { text: "Input 按钮", link: "examples/Input" },
+              { text: "Button 按钮", link: "guide/Button/index.md" },
+              { text: "Input 按钮", link: "guide/Input/index.md" },
             ],
           },
         ],
@@ -35,4 +35,10 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
   },
+  // 注册插件
+  markdown:{
+    config(md){
+      md.use(aiascom)
+    }
+  }
 });
