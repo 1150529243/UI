@@ -1,0 +1,17 @@
+{
+  "name": "@ludashuai-ui/build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "fast-glob": "^3.3.3",
+    "ts-morph": "^25.0.1"
+  }
+}

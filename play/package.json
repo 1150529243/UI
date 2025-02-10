@@ -1,0 +1,16 @@
+{
+  "name": "@ludashuai-ui/play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ludashuai-ui/components": "workspace:^",
+    "@vitejs/plugin-vue": "^5.0.5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ludashuai-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "build":"pnpm -C internal/build start",
+    "docs:dev" : "pnpm -C docs docs:dev",
+    "docs:build" : "pnpm -C docs docs:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "vite": "^6.0.11",
+    "vue": "^3.5.13"
+  }
+}
